@@ -1,0 +1,206 @@
+################################################################################
+L1_SingleTkMu
+leg1 Eta = 0,     offline = 22.0,    online = 20.0
+################################################################################
+L1_DoubleTkMu
+leg1 Eta = 0,     offline = 15.0,    online = 13.4
+leg2 Eta = 0,     offline = 7.0,    online = 7.0
+################################################################################
+L1_TripleTkMu
+leg1 Eta = 0,     offline = 5.0,    online = 5.0
+leg2 Eta = 0,     offline = 3.0,    online = 3.0
+leg3 Eta = 0,     offline = 3.0,    online = 3.0
+################################################################################
+L1_TripleTkMu_NoSC
+leg1 Eta = 0,     offline = 5,    online = 0.0
+leg2 Eta = 0,     offline = 3,    online = 0.0
+leg3 Eta = 0,     offline = 3,    online = 0.0
+################################################################################
+L1_SingleTkEle
+leg1 Eta = 0,     offline = 36.0,    online = 29.8
+################################################################################
+L1_SingleTkEleIso
+leg1 Eta = 0,     offline = 28.0,    online = 23.0
+################################################################################
+L1_DoubleTkEle
+leg1 Eta = 0,     offline = 25.0,    online = 20.3
+leg2 Eta = 0,     offline = 12.0,    online = 9.1
+################################################################################
+L1_SingleTkPhoIso
+leg1 Eta = 0,     offline = 36.0,    online = 30.4
+################################################################################
+L1_TkEleIso_EG
+leg1 Eta = 0,     offline = 22.0,    online = 17.8
+leg2 Eta = 0,     offline = 12.0,    online = 7.8
+################################################################################
+L1_DoubleTkPhoIso
+leg1 Eta = 0,     offline = 22.0,    online = 17.6
+leg2 Eta = 0,     offline = 12.0,    online = 8.5
+################################################################################
+L1_SinglePFTau
+leg1 Eta = 0,     offline = 150.0,    online = 100.2
+################################################################################
+L1_PFTau_PFTau
+leg1 Eta = 0,     offline = 90.0,    online = 60.7
+leg2 Eta = 0,     offline = 90.0,    online = 60.7
+################################################################################
+L1_PFIsoTau_PFIsoTau
+leg1 Eta = 0,     offline = 52.0,    online = 28.6
+leg2 Eta = 0,     offline = 52.0,    online = 28.6
+################################################################################
+L1_PFIsoTau_TkMu
+leg2 Eta = 0,     offline = 18.0,    online = 16.2
+leg3 Eta = 0,     offline = 42.0,    online = 23.4
+################################################################################
+L1_TkEleIso_PFIsoTau
+leg2 Eta = 0,     offline = 22.0,    online = 17.8
+leg3 Eta = 0,     offline = 45.0,    online = 24.9
+################################################################################
+L1_PFIsoTau_PFMet
+leg1 Eta = 0,     offline = 55.0,    online = 30.1
+leg2 Eta = 0,     offline = 190.0,    online = 86.2
+################################################################################
+L1_SinglePfJet
+leg1 Eta = 0,     offline = 230.0,    online = 160.5
+################################################################################
+L1_DoublePFJet_dEtaMax
+leg1 Eta = 0,     offline = 112.0,    online = 70.3
+leg2 Eta = 0,     offline = 112.0,    online = 70.3
+################################################################################
+L1_PFHTT
+leg1 Eta = 0,     offline = 450.0,    online = 372.9
+################################################################################
+L1_PFMHTT
+leg1 Eta = 0,     offline = 135.5,    online = 69.0
+################################################################################
+L1_PFMet
+leg1 Eta = 0,     offline = 200.0,    online = 93.1
+################################################################################
+L1_PFHTT_QuadJet
+leg1 Eta = 0,     offline = 400.0,    online = 326.9
+leg2 Eta = 0,     offline = 70.0,    online = 38.1
+leg3 Eta = 0,     offline = 55.0,    online = 26.7
+leg4 Eta = 0,     offline = 40.0,    online = 15.2
+leg5 Eta = 0,     offline = 40.0,    online = 15.2
+################################################################################
+L1_TkMu_TkEleIso
+leg1 Eta = 0,     offline = 7.0,    online = 7.0
+leg2 Eta = 0,     offline = 20.0,    online = 16.1
+################################################################################
+L1_TkMu_TkEle
+leg1 Eta = 0,     offline = 7.0,    online = 7.0
+leg2 Eta = 0,     offline = 23.0,    online = 18.6
+################################################################################
+L1_TkEle_TkMu
+leg1 Eta = 0,     offline = 10.0,    online = 7.4
+leg2 Eta = 0,     offline = 20.0,    online = 18.1
+################################################################################
+L1_TkMu_DoubleTkEle
+leg1 Eta = 0,     offline = 17.0,    online = 13.4
+leg2 Eta = 0,     offline = 17.0,    online = 13.4
+leg3 Eta = 0,     offline = 6.0,    online = 6.0
+################################################################################
+L1_DoubleTkMu_TkEle
+leg1 Eta = 0,     offline = 9.0,    online = 6.5
+leg2 Eta = 0,     offline = 5.0,    online = 5.0
+leg3 Eta = 0,     offline = 5.0,    online = 5.0
+################################################################################
+L1_TkMu_PfHTT
+leg2 Eta = 0,     offline = 6.0,    online = 6.0
+leg3 Eta = 0,     offline = 320.0,    online = 253.2
+################################################################################
+L1_TkMu_PfJet_dRMax_DoubleJet_dEtaMax
+leg2 Eta = 0,     offline = 12.0,    online = 10.5
+leg3 Eta = 0,     offline = 40.0,    online = 15.2
+leg4 Eta = 0,     offline = 40.0,    online = 15.2
+leg5 Eta = 0,     offline = 40.0,    online = 15.2
+################################################################################
+L1_TkMu_PfJet_PfMet
+leg2 Eta = 0,     offline = 3.0,    online = 3.0
+leg3 Eta = 0,     offline = 110.0,    online = 68.7
+leg4 Eta = 0,     offline = 120.0,    online = 38.3
+################################################################################
+L1_DoubleTkMu_PfJet_PfMet
+leg2 Eta = 0,     offline = 3.0,    online = 3.0
+leg3 Eta = 0,     offline = 3.0,    online = 3.0
+leg4 Eta = 0,     offline = 60.0,    online = 30.5
+leg5 Eta = 0,     offline = 130.0,    online = 45.2
+################################################################################
+L1_DoubleTkMu_PfHTT
+leg2 Eta = 0,     offline = 3.0,    online = 3.0
+leg3 Eta = 0,     offline = 3.0,    online = 3.0
+leg4 Eta = 0,     offline = 300.0,    online = 234.8
+################################################################################
+L1_DoubleTkEle_PFHTT
+leg2 Eta = 0,     offline = 8.0,    online = 5.7
+leg3 Eta = 0,     offline = 8.0,    online = 5.7
+leg4 Eta = 0,     offline = 390.0,    online = 317.7
+################################################################################
+L1_TkEleIso_PFHTT
+leg2 Eta = 0,     offline = 26.0,    online = 21.3
+leg3 Eta = 0,     offline = 190.0,    online = 133.5
+################################################################################
+L1_TkEle_PFJet_dRMin
+leg2 Eta = 0,     offline = 28.0,    online = 22.9
+leg3 Eta = 0,     offline = 40.0,    online = 15.2
+################################################################################
+L1_DoublePFJet_MassMin
+leg1 Eta = 0,     offline = 160.0,    online = 107.0
+leg2 Eta = 0,     offline = 35.0,    online = 11.4
+################################################################################
+L1_DoubleTkMu0er1p5_SQ_OS_dR_Max1p4
+leg1 Eta = 0,     offline = 2.0,    online = 2.0
+leg2 Eta = 0,     offline = 2.0,    online = 2.0
+################################################################################
+L1_DoubleTkMu4_SQ_OS_dR_Max1p2
+leg1 Eta = 0,     offline = 4.0,    online = 4.0
+leg2 Eta = 0,     offline = 4.0,    online = 4.0
+################################################################################
+L1_DoubleTkMu4p5er2p0_SQ_OS_Mass7to18
+leg1 Eta = 0,     offline = 4.5,    online = 4.5
+leg2 Eta = 0,     offline = 4.5,    online = 4.5
+################################################################################
+L1_DoubleTkMu9_SQ
+leg1 Eta = 0,     offline = 9.0,    online = 7.6
+leg2 Eta = 0,     offline = 9.0,    online = 7.6
+################################################################################
+L1_TripleTkMu_5SQ_3SQ_0OQ_DoubleMu_5_3_SQ_OS_Mass_Max9
+leg1 Eta = 0,     offline = 5,    online = 0.0
+leg2 Eta = 0,     offline = 3,    online = 0.0
+leg3 Eta = 0,     offline = 0.0,    online = 0.0
+################################################################################
+L1_TripleTkMu_5_3p5_2p5_OS_Mass_5to17
+leg1 Eta = 0,     offline = 5,    online = 0.0
+leg2 Eta = 0,     offline = 3.5,    online = 0.0
+leg3 Eta = 0,     offline = 2.5,    online = 0.0
+################################################################################
+L1_SingleEGEle
+leg1 Eta = 0,     offline = 51.0,    online = 40.7
+################################################################################
+L1_DoubleEGEle
+leg1 Eta = 0,     offline = 37.0,    online = 28.9
+leg2 Eta = 0,     offline = 24.0,    online = 17.9
+################################################################################
+L1_SinglePfJet8
+leg1 Eta = 0,     offline = 230.0,    online = 1000.0
+################################################################################
+L1_DoublePFJet8_dEtaMax
+leg1 Eta = 0,     offline = 200.0,    online = 1000.0
+leg2 Eta = 0,     offline = 200.0,    online = 1000.0
+################################################################################
+L1_PFHTT_QuadJet_BTagNNScore
+leg1 Eta = 0,     offline = 299.0,    online = 1000.0
+leg2 Eta = 0,     offline = 25.0,    online = 1000.0
+leg3 Eta = 0,     offline = 25.0,    online = 1000.0
+leg4 Eta = 0,     offline = 25.0,    online = 1000.0
+leg5 Eta = 0,     offline = 25.0,    online = 1000.0
+################################################################################
+L1_SingleDispMu
+leg1 Eta = 0,     offline = 22.0,    online = 1000.0
+################################################################################
+L1_DoubleDispMu
+leg1 Eta = 0,     offline = 15.0,    online = 1000.0
+leg1 Eta = 0,     offline = 7.0,    online = 1000.0
+################################################################################
+L1_W3pi_GTT
+leg1 Eta = 0,     offline = -99.0,    online = 1000.0
