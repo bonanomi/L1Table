@@ -1,0 +1,256 @@
+\documentclass{article}
+\usepackage[a4paper,margin=0.4cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{adjustbox}
+\usepackage{amsmath}
+\usepackage{slashed}
+\usepackage{multirow}
+\newcommand{\PT}{\ensuremath{p_{\mathrm{T}}}\xspace}
+\newcommand{\pt}{\ensuremath{p_{\mathrm{T}}}\xspace}
+\newcommand{\ET}{\ensuremath{E_{\mathrm{T}}}\xspace}
+\newcommand{\HT}{\ensuremath{H_{T}}\xspace}
+\newcommand{\mT}{\ensuremath{m_{\mathrm{T}}}\xspace}
+\newcommand{\mTii}{\ensuremath{m_{\mathrm{T2}}}\xspace}
+\newcommand{\et}{\ensuremath{E_{\mathrm{T}}}\xspace}
+\newcommand{\Em}{\ensuremath{E\hspace{-0.6em}/}\xspace}
+\newcommand{\Pm}{\ensuremath{p\hspace{-0.5em}/}\xspace}
+\newcommand{\PTm}{\ensuremath{{p}_\mathrm{T}\hspace{-1.02em}/\kern 0.5em}\xspace}
+\newcommand{\PTslash}{\PTm}
+\newcommand{\ETm}{\ensuremath{E_{\mathrm{T}}^{\text{miss}}}\xspace}
+\newcommand{\MET}{\ETm}
+\newcommand{\ETmiss}{\ETm}
+\newcommand{\ptmiss}{\ensuremath{\pt^\text{miss}}\xspace}
+
+
+\title{L1 TDR Menu Table}
+\author{Cristina Botta, Jaana Heikkilä}
+\date{December 2020 (last updated: March 2022)}
+
+\begin{document}
+
+\section{Step 1}
+\begin{table}[th] 
+\label{tab:Step1Menu} 
+%\resizebox{\columnwidth}{!}{%
+\begin{adjustbox}{width=\textwidth}
+{\scriptsize
+\begin{tabular}	{|l|c|c|c|c|} 
+\hline	             &	  Offline   & 	Rate  &  Additional & Objects    \\
+       L1 Trigger seeds &  Threshold(s)  &  $\langle {PU} \rangle = 200$ &  Requirement(s)  & plateau   \\
+	                 &  [GeV]  &  [kHz]  &   [cm, GeV]  & [\%]	\\   
+\hline
+\hline \multicolumn{5}{|l|}{Single/Double/Triple Lepton (electron, muon) seeds} \\
+\hline Single tkMuon & 22 & 9 & $|\eta|<2.4$ & 95\\
+\hline Double tkMuon & 15,7 & 1 & $|\eta|<2.4$, ${\Delta}z <1$ & 95\\
+\hline Single tkElectron & 36 & 28 & $|\eta|<2.4$ & 93\\
+\hline Single tkIsoElectron & 28 & 37 & $|\eta|<2.4$ & 93\\
+\hline TkIsoElectron-StaEG & 22,12 & 30 & $|\eta|<2.4$ & 93,99\\
+\hline Double tkElectron & 25,12 & 14 & $|\eta|<2.4$, ${\Delta}z <1$ & 93\\
+\hline Single StaEG & 51 & 32 & $|\eta|<2.4$ & 99\\
+\hline Double StaEG & 37,24 & 6 & $|\eta|<2.4$ & 99\\
+\hline
+\hline \multicolumn{5}{|l|}{Photon seeds} \\
+\hline Single TkIsoPhoton & 36 & 39 & $|\eta|<2.4$ & 97\\
+\hline Double TkIsoPhoton & 22,12 & 20 & $|\eta|<2.4$ & 97\\
+\hline
+\hline \multicolumn{5}{|l|}{Tau seeds} \\
+\hline Single CaloTau & 150 & 57 & $|\eta|<2.172$ & 99\\
+\hline Double CaloTau & 90,90 & 64 & $|\eta|<2.172$, ${\Delta}R >0.5$ & 99\\
+\hline Double PuppiTau & 52,52 & 28 & $|\eta|<2.172$, ${\Delta}R >0.5$, $\text{LooseNN} > 0$ & 90\\
+\hline
+\hline \multicolumn{5}{|l|}{Hadronic seeds (jets,\HT)} \\
+\hline Single PuppiJet & 230 & 34 & $|\eta|<2.4$ & 100\\
+\hline Double PuppiJet & 112,112 & 89 & $|\eta|<2.4$, ${\Delta}\eta <1.6$ & 100\\
+\hline Puppi\HT & 450 & 10 & jets: $|\eta|<2.4$, $\pt >30$ & 100\\
+\hline Puppi$\slashed{\ensuremath{H}}_{\mathrm{T}}$ & 135 & 14 & jets: $|\eta|<2.4$, $\pt >30$ & 100\\
+\hline QuadPuppiJets-Puppi\HT(**) & 400,70,55,40,40 & 17 & jets: $|\eta|<2.4$, $\pt >25$ & 100,100\\
+\hline
+\hline \multicolumn{5}{|l|}{\ETmiss seeds} \\
+\hline PuppiE_{T}^{miss} & 200 & 31 &  & 100\\
+\hline
+\hline \multicolumn{5}{|l|}{Cross Lepton seeds} \\
+\hline TkMuon-TkIsoElectron & 7,20 & 0 & $|\eta|<2.4$, ${\Delta}z <1$ & 95,93\\
+\hline TkMuon-TkElectron & 7,23 & 1 & $|\eta|<2.4$, ${\Delta}z <1$ & 95,93\\
+\hline \color{black}TkElectron-TkMuon & 10,20 & 1 & $|\eta|<2.4$, ${\Delta}z <1$ & 93,95\\
+\hline Triple TkMuon & 5,3,3 & 2 & $|\eta|<2.4$, ${\Delta}z <1$, Qual>0 & 95\\
+\hline TkMuon-DoubleTkElectron & 17,17,6 & 0 & $|\eta|<2.4$, ${\Delta}z <1$ & 95,93\\
+\hline DoubleTkMuon-TkElectron & 9,5,5 & 0 & $|\eta|<2.4$, ${\Delta}z <1$, Qual>0 & 95,93\\
+\hline PuppiTau-TkMuon & 18,42 & 2 &  $|\eta|<2.172$, $|\eta|<2.1$, ${\Delta}z <1$, $\text{LooseNN} > 0$ & 90,95\\
+\hline TkIsoElectron-PuppiTau & 22,45 & 28 & $|\eta|<2.172$, $|\eta|<2.1$, ${\Delta}z <1$, $\text{LooseNN} > 0$ & 93,90\\
+\hline
+\hline \multicolumn{5}{|l|}{Cross Hadronic-Lepton seeds} \\
+\hline TkMuon-Puppi\HT & 6,320 & 1 & $|\eta|<2.4$, ${\Delta}z <1$ & 95,100\\
+\hline TkMuon-TriplePuppiJet & 12,40,40,40 & 33 & $|\eta|<2.4$, ${\Delta}R_{j1\mu}<0.4$,${\Delta}\eta_{j2j3}<1.6$, ${\Delta}z <1$ & 95,100\\
+\hline DoubleTkElectron-Puppi\HT & 8,8,390 & 8 & $|\eta|<2.4$, ${\Delta}z <1$ & 93,100\\
+\hline DoubleTkMuon-Puppi\HT & 3,3,300 & 0 & $|\eta|<2.4$, ${\Delta}z <1$, Qual>0 & 93,100\\
+\hline DoubleTkMuon-PuppiJet-PuppiETmiss & 3,3,60,130 & 1 & $|\eta|<2.4$, ${\Delta}z <1$, Qual>0 & 95,100,100\\
+\hline TkIsoElectron-Puppi\HT & 26,190 & 13 & $|\eta|<2.4$, ${\Delta}z <1$, $\text{LooseNN} > 0$ & 93,100\\
+\hline TkElectron-PuppiJet (**) & 28,40 & 54 & $|\eta|<2.1$, $|\eta|<2.4$, ${\Delta}R>0.3$, ${\Delta}z <1$ & 93,100\\
+\hline PuppiTau-PuppiE_{T}^{miss} & 55,190 & 10 & $|\eta|<2.172$, $\text{LooseNN} > 0$ & 90,100\\
+\hline TkMuon-PuppiJet-PuppiETmiss & 3,110,120 & 18 & $|\eta|<2.4$, ${\Delta}z <1$, Qual>0 & 95,100,100\\
+\hline
+\hline \multicolumn{5}{|l|}{VBF seeds} \\
+\hline Double PuppiJets (**) & 160,35 & 50 & $|\eta|<5$, $m_{jj}>620$ & 100\\
+\hline
+\hline \multicolumn{5}{|l|}{BPH seeds} \\
+\hline \color{black}Double TkMuon 0er1p5\_SQ\_OS\_dR\_Max1p4 & 2,2 & 12 & $|\eta|<1.5$, ${\Delta}z <1$, ${\Delta}R <1.4$, $q_1\times q_2 <0$ & 95\\
+\hline \color{black}Double TkMuon 4\_SQ\_OS\_dR\_Max1p & 4,4 & 5 & $|\eta|<2.4$, ${\Delta}z <1$, ${\Delta}R <1.5$, $q_1\times q_2 <0$, Qual>0 & 95\\
+\hline \color{black}Double TkMuon 4p5er2p0\_SQ\_OS\_Mass7to18 & 4,4 & 3 & $|\eta|<2.0$, ${\Delta}z <1$, $7 < m <18$, $q_1\times q_2 <0$, Qual>0 & 95\\
+\hline Triple TkMuon 5SQ\_3SQ\_0OQ\_DoubleMu\_5\_3\_SQ\_OS\_Mass\_Max9 & 5,3,0 & 1 & $|\eta|<2.4$, ${\Delta}z <1$, $p_{T,1} > 5$, $p_{T,2} > 3$, $p_{T,3} > 0$, $0< m <9$, $q_1\times q_2 <0$, Qual>0 & 95\\
+\hline Triple TkMuon 5\_3p5\_2p5\_OS\_Mass\_5to17 & 5,3,2 & 0 & $|\eta|<2.4$, ${\Delta}z <1$, $p_{T,1} > 5$, $p_{T,2} > 3.5$, $p_{T,3} > 2.5$, $5 <m <17$, $q_1\times q_2 <0$, Qual>0 & 95\\
+\hline
+\hline
+\multicolumn{3}{|l}{Rate for above Trigger seeds} &  \multicolumn{2}{r|}{{\color{black}395}}\\
+\hline
+\multicolumn{3}{|l}{\bf Total \Lone  Menu Rate (+30\%)} &  \multicolumn{2}{r|}{{\color{black}513}}\\
+\hline
+\hline
+\end{tabular}
+}
+\end{adjustbox}
+\end{table}
+
+
+\clearpage
+
+\section{Step 2}
+
+\begin{table}[th] 
+\label{tab:Step2Menu} 
+%\resizebox{\columnwidth}{!}{%
+\begin{adjustbox}{width=\textwidth}
+{\scriptsize
+\begin{tabular}	{|l|c|c|c|c|} 
+\hline	             &	  Offline   & 	Rate  &  Additional & Objects    \\
+       L1 Trigger seeds &  Threshold(s)  &  $\langle {PU} \rangle = 200$ &  Requirement(s)  & plateau   \\
+	                 &  [GeV]  &  [kHz]  &   [cm, GeV]  & [\%]	\\   
+\hline
+\hline \multicolumn{5}{|l|}{BPH seeds} \\
+\hline QuadPuppiJets-Puppi\HT & 299,25,25,25,25 & 14 & $|\eta|<2.4$, Tot. b-tag score $>$ 2.2 & 95\\
+\hline
+\hline \multicolumn{5}{|l|}{SC8 seeds} \\
+\hline Single Ak8 PuppiJet & 230 & 59 & $|\eta|<2.4$ & 100\\
+\hline Double Ak8 PuppiJet & 200,200 & 13 & $|\eta|<2.4$, ${\Delta}\eta_{j1j2}<1.6$ & 100\\
+\hline
+\hline \multicolumn{5}{|l|}{Displaced Muons} \\
+\hline Single Displaced Muon & 22 & 56 & $|\eta|<2.0$, Qual $\geq$ 15 & 99\\
+\hline Single Displaced Muon & 15,7 & 14 & $|\eta|<2.4$ & 99\\
+\hline
+\hline \multicolumn{5}{|l|}{GMT} \\
+\hline Track Triplet for W3Pi & -99 & 1 &  & 100\\
+\hline
+\hline
+\multicolumn{3}{|l}{Rate for above Trigger seeds} &  \multicolumn{2}{r|}{{\color{black}132}}\\
+\hline
+\multicolumn{3}{|l}{\bf Total \Lone  Menu Rate (+30\%)} &  \multicolumn{2}{r|}{{\color{black}171}}\\
+\hline
+\hline
+\end{tabular}
+}
+\end{adjustbox}
+\end{table}
+
+\clearpage
+
+\section{Step 1 + Step 2}
+
+\begin{table}[th] 
+\label{tab:Step1p2Menu} 
+%\resizebox{\columnwidth}{!}{%
+\begin{adjustbox}{width=\textwidth}
+{\scriptsize
+\begin{tabular}	{|l|c|c|c|c|} 
+\hline	             &	  Offline   & 	Rate  &  Additional & Objects    \\
+       L1 Trigger seeds &  Threshold(s)  &  $\langle {PU} \rangle = 200$ &  Requirement(s)  & plateau   \\
+	                 &  [GeV]  &  [kHz]  &   [cm, GeV]  & [\%]	\\   
+\hline
+\hline \multicolumn{5}{|l|}{Single/Double/Triple Lepton (electron, muon) seeds} \\
+\hline Single tkMuon & 22 & 8 & $|\eta|<2.4$ & 95\\
+\hline Double tkMuon & 15,7 & 1 & $|\eta|<2.4$, ${\Delta}z <1$ & 95\\
+\hline Single tkElectron & 36 & 28 & $|\eta|<2.4$ & 93\\
+\hline Single tkIsoElectron & 28 & 37 & $|\eta|<2.4$ & 93\\
+\hline TkIsoElectron-StaEG & 22,12 & 30 & $|\eta|<2.4$ & 93,99\\
+\hline Double tkElectron & 25,12 & 14 & $|\eta|<2.4$, ${\Delta}z <1$ & 93\\
+\hline Single StaEG & 51 & 32 & $|\eta|<2.4$ & 99\\
+\hline Double StaEG & 37,24 & 6 & $|\eta|<2.4$ & 99\\
+\hline
+\hline \multicolumn{5}{|l|}{Photon seeds} \\
+\hline Single TkIsoPhoton & 36 & 39 & $|\eta|<2.4$ & 97\\
+\hline Double TkIsoPhoton & 22,12 & 20 & $|\eta|<2.4$ & 97\\
+\hline
+\hline \multicolumn{5}{|l|}{Tau seeds} \\
+\hline Single CaloTau & 150 & 57 & $|\eta|<2.172$ & 99\\
+\hline Double CaloTau & 90,90 & 64 & $|\eta|<2.172$, ${\Delta}R >0.5$ & 99\\
+\hline Double PuppiTau & 52,52 & 28 & $|\eta|<2.172$, ${\Delta}R >0.5$, $\text{LooseNN} > 0$ & 90\\
+\hline
+\hline \multicolumn{5}{|l|}{Hadronic seeds (jets,\HT)} \\
+\hline Single PuppiJet & 230 & 38 & $|\eta|<2.4$ & 100\\
+\hline Double PuppiJet & 112,112 & 99 & $|\eta|<2.4$, ${\Delta}\eta <1.6$ & 100\\
+\hline Puppi\HT & 450 & 10 & jets: $|\eta|<2.4$, $\pt >30$ & 100\\
+\hline Puppi$\slashed{\ensuremath{H}}_{\mathrm{T}}$ & 135 & 14 & jets: $|\eta|<2.4$, $\pt >30$ & 100\\
+\hline QuadPuppiJets-Puppi\HT(**) & 400,70,55,40,40 & 10 & jets: $|\eta|<2.4$, $\pt >25$ & 100,100\\
+\hline
+\hline \multicolumn{5}{|l|}{\ETmiss seeds} \\
+\hline PuppiE_{T}^{miss} & 200 & 31 &  & 100\\
+\hline
+\hline \multicolumn{5}{|l|}{Cross Lepton seeds} \\
+\hline TkMuon-TkIsoElectron & 7,20 & 0 & $|\eta|<2.4$, ${\Delta}z <1$ & 95,93\\
+\hline TkMuon-TkElectron & 7,23 & 1 & $|\eta|<2.4$, ${\Delta}z <1$ & 95,93\\
+\hline \color{black}TkElectron-TkMuon & 10,20 & 1 & $|\eta|<2.4$, ${\Delta}z <1$ & 93,95\\
+\hline Triple TkMuon & 5,3,3 & 1 & $|\eta|<2.4$, ${\Delta}z <1$, Qual $>$ 0 & 95\\
+\hline TkMuon-DoubleTkElectron & 17,17,6 & 0 & $|\eta|<2.4$, ${\Delta}z <1$ & 95,93\\
+\hline DoubleTkMuon-TkElectron & 9,5,5 & 0 & $|\eta|<2.4$, ${\Delta}z <1$, Qual $>$ 0 & 95,93\\
+\hline PuppiTau-TkMuon & 18,42 & 2 &  $|\eta|<2.172$, $|\eta|<2.1$, ${\Delta}z <1$, $\text{LooseNN} > 0$ & 90,95\\
+\hline TkIsoElectron-PuppiTau & 22,45 & 28 & $|\eta|<2.172$, $|\eta|<2.1$, ${\Delta}z <1$, $\text{LooseNN} > 0$ & 93,90\\
+\hline
+\hline \multicolumn{5}{|l|}{Cross Hadronic-Lepton seeds} \\
+\hline TkMuon-Puppi\HT & 6,320 & 1 & $|\eta|<2.4$, ${\Delta}z <1$ & 95,100\\
+\hline TkMuon-TriplePuppiJet & 12,40,40,40 & 4 & $|\eta|<2.4$, ${\Delta}R_{j1\mu}<0.4$,${\Delta}\eta_{j2j3}<1.6$, ${\Delta}z <1$ & 95,100\\
+\hline DoubleTkElectron-Puppi\HT & 8,8,390 & 8 & $|\eta|<2.4$, ${\Delta}z <1$ & 93,100\\
+\hline DoubleTkMuon-Puppi\HT & 3,3,300 & 0 & $|\eta|<2.4$, ${\Delta}z <1$, Qual $>$ 0 & 93,100\\
+\hline DoubleTkMuon-PuppiJet-PuppiETmiss & 3,3,60,130 & 1 & $|\eta|<2.4$, ${\Delta}z <1$, Qual $>$ 0 & 95,100,100\\
+\hline TkIsoElectron-Puppi\HT & 26,190 & 13 & $|\eta|<2.4$, ${\Delta}z <1$, $\text{LooseNN} > 0$ & 93,100\\
+\hline TkElectron-PuppiJet (**) & 28,40 & 48 & $|\eta|<2.1$, $|\eta|<2.4$, ${\Delta}R>0.3$, ${\Delta}z <1$ & 93,100\\
+\hline PuppiTau-PuppiE_{T}^{miss} & 55,190 & 10 & $|\eta|<2.172$, $\text{LooseNN} > 0$ & 90,100\\
+\hline TkMuon-PuppiJet-PuppiETmiss & 3,110,120 & 18 & $|\eta|<2.4$, ${\Delta}z <1$, Qual $>$ 0 & 95,100,100\\
+\hline
+\hline \multicolumn{5}{|l|}{VBF seeds} \\
+\hline Double PuppiJets (**) & 160,35 & 42 & $|\eta|<5$, $m_{jj}>620$ & 100\\
+\hline
+\hline \multicolumn{5}{|l|}{BPH seeds} \\
+\hline \color{black}Double TkMuon 0er1p5\_SQ\_OS\_dR\_Max1p4 & 2,2 & 9 & $|\eta|<1.5$, ${\Delta}z <1$, ${\Delta}R <1.4$, $q_1\times q_2 <0$ & 95\\
+\hline \color{black}Double TkMuon 4\_SQ\_OS\_dR\_Max1p & 4,4 & 4 & $|\eta|<2.4$, ${\Delta}z <1$, ${\Delta}R <1.5$, $q_1\times q_2 <0$, Qual $>$ 0 & 95\\
+\hline \color{black}Double TkMuon 4p5er2p0\_SQ\_OS\_Mass7to18 & 4,4 & 2 & $|\eta|<2.0$, ${\Delta}z <1$, $7 < m <18$, $q_1\times q_2 <0$, Qual $>$ 0 & 95\\
+\hline Triple TkMuon 5SQ\_3SQ\_0OQ\_DoubleMu\_5\_3\_SQ\_OS\_Mass\_Max9 & 5,3,0 & 1 & $|\eta|<2.4$, ${\Delta}z <1$, $p_{T,1} > 5$, $p_{T,2} > 3$, $p_{T,3} > 0$, $0< m <9$, $q_1\times q_2 <0$, Qual $>$ 0 & 95\\
+\hline Triple TkMuon 5\_3p5\_2p5\_OS\_Mass\_5to17 & 5,3,2 & 0 & $|\eta|<2.4$, ${\Delta}z <1$, $p_{T,1} > 5$, $p_{T,2} > 3.5$, $p_{T,3} > 2.5$, $5 <m <17$, $q_1\times q_2 <0$, Qual $>$ 0 & 95\\
+\hline QuadPuppiJets-Puppi\HT & 299,25,25,25,25 & 14 & $|\eta|<2.4$, Tot. b-tag score $>$ 2.2 & 95\\
+\hline
+\hline \multicolumn{5}{|l|}{SC8 seeds} \\
+\hline Single Ak8 PuppiJet & 230 & 59 & $|\eta|<2.4$ & 100\\
+\hline Double Ak8 PuppiJet & 200,200 & 13 & $|\eta|<2.4$, ${\Delta}\eta_{j1j2}<1.6$ & 100\\
+\hline
+\hline \multicolumn{5}{|l|}{Displaced Muons} \\
+\hline Single Displaced Muon & 22 & 56 & $|\eta|<2.0$, Qual $\geq$ 15 & 99\\
+\hline Single Displaced Muon & 15,7 & 14 & $|\eta|<2.4$ & 99\\
+\hline
+\hline \multicolumn{5}{|l|}{GMT} \\
+\hline Track Triplet for W3Pi & -99 & 1 &  & 100\\
+\hline
+\hline
+\multicolumn{3}{|l}{Rate for above Trigger seeds} &  \multicolumn{2}{r|}{{\color{black}436}}\\
+\hline
+\multicolumn{3}{|l}{\bf Total \Lone  Menu Rate (+30\%)} &  \multicolumn{2}{r|}{{\color{black}566}}\\
+\hline
+\hline
+\end{tabular}
+}
+\end{adjustbox}
+\end{table}
+
+\end{document}
+
+
+
+
+
